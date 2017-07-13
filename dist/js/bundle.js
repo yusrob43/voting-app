@@ -36417,17 +36417,17 @@
 	        _react2.default.createElement(
 	          'h1',
 	          { className: 'text-center' },
-	          'Voting App'
+	          'Demo - A Simple Voting App'
 	        ),
 	        _react2.default.createElement(
 	          'h2',
 	          { className: 'text-center' },
-	          'Create custom polls with live results.'
+	          'Create Custom Polls With Live Results.'
 	        ),
 	        typeof this.props.state == 'undefined' || !this.props.state.user ? _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/signup' },
-	          _react2.default.createElement(_RaisedButton2.default, { fullWidth: true, primary: true, label: 'Sign Up Now' })
+	          _react2.default.createElement(_RaisedButton2.default, { fullWidth: true, primary: true, label: 'Sign Up' })
 	        ) : ''
 	      ),
 	      _react2.default.createElement(
@@ -36435,7 +36435,7 @@
 	        { className: 'no-main' },
 	        _react2.default.createElement(
 	          _Tabs.Tab,
-	          { label: 'Popular', icon: _react2.default.createElement(
+	          { label: 'Popular Polls', icon: _react2.default.createElement(
 	              _FontIcon2.default,
 	              { className: 'material-icons' },
 	              'terrain'
@@ -36444,7 +36444,7 @@
 	        ),
 	        _react2.default.createElement(
 	          _Tabs.Tab,
-	          { label: 'Latest', icon: _react2.default.createElement(
+	          { label: 'Latest Polls', icon: _react2.default.createElement(
 	              _FontIcon2.default,
 	              { className: 'material-icons' },
 	              'format_indent_increase'
@@ -43616,7 +43616,7 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(_AppBar2.default, { title: 'Vote!', showMenuIconButton: false, iconElementRight: AppBarMenu }),
+	      _react2.default.createElement(_AppBar2.default, { title: 'Demo!', showMenuIconButton: false, iconElementRight: AppBarMenu }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'main' },
@@ -43626,11 +43626,11 @@
 	      _react2.default.createElement(
 	        'p',
 	        { className: 'text-center muted text-small' },
-	        'Coded and Written by ',
+	        'Coded by ',
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'http://neckersbox.eu' },
-	          'Davide Francesco Merico'
+	          { href: 'https://github.com/yusrob43' },
+	          'Yusuf Robles'
 	        ),
 	        '.'
 	      ),
@@ -43639,7 +43639,7 @@
 	        { className: 'text-center muted text-small' },
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'https://github.com/NeckersBOX/votingapp' },
+	          { href: 'https://github.com/yusrob43/voting-app' },
 	          'GitHub Project'
 	        )
 	      )
