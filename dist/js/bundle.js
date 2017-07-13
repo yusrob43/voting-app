@@ -57737,7 +57737,7 @@
 	      _react2.default.createElement(
 	        'p',
 	        { className: 'text-center' },
-	        'Not register yet?',
+	        'Not registered yet?',
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/signup', className: 'margin-horizontal' },

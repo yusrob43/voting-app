@@ -22,7 +22,7 @@ export default React.createClass ({
       <Paper style={{ margin: '8px', padding: '8px' }}>
         <h1 className="text-center">Log In</h1>
         <p className="text-center">
-          Not register yet?
+          Not registered yet?
           <Link to='/signup' className="margin-horizontal">
             Sign Up
           </Link>

@@ -90,7 +90,7 @@ export default React.createClass ({
         </div>
         <div className="align-center">
           <RaisedButton style={{ marginTop: '1em' }} primary={true} onClick={this.signUp}
-            label="Sign up and start publish" disabled={this.state.button_disabled} />
+            label="Sign Up" disabled={this.state.button_disabled} />
         </div>
         <p className="text-center muted">
           <small>Your email and your password will be kept private.</small>
