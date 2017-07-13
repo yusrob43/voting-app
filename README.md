@@ -1,1 +1,1 @@
-# voting-app
+# Demo Voting App

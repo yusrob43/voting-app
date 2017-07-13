@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: rgba 0, 0, 0, 0.89; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00bcd4;
+  letter-spacing: 0.3px; }
+
+a {
+  color: #00bcd4;
+  text-decoration: none; }
+  a:visited {
+    color: #00bcd4; }
+  a:hover, a:focus {
+    color: #00dce4; }
+
+.appbar-btn {
+  margin-top: 6px; }
+
+.main {
+  margin: 8px; }
+
+.no-main {
+  margin: auto -8px; }
+
+.text-center {
+  text-align: center; }
+
+.text-error {
+  color: #ff2200; }
+
+.text-primary {
+  color: #00bcd4; }
+
+.text-small {
+  font-size: 0.8em; }
+
+.align-center {
+  display: block;
+  text-align: center; }
+
+.muted {
+  color: rgba(0, 0, 0, 0.6); }
+
+.margin-horizontal {
+  margin: 0 0.5em; }
+
+.margin-vertical {
+  margin: 0.5em 0; }
+
+.hide-sm {
+  display: inline-block; }
+
+.show-sm {
+  display: none; }
+
+.divider {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 1px;
+  margin: 4px 0; }
+
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none; }
+  .show-sm {
+    display: inline-block; } }
