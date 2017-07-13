@@ -5,7 +5,7 @@ export default React.createClass ({
   render () {
     return (
       <Paper style={{ padding: '8px', margin: '8px' }}>
-        <h1 className="text-center">Page Not Found :(</h1>
+        <h1 className="text-center">Page Not Found</h1>
       </Paper>
     );
   }

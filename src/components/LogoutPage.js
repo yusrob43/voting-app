@@ -27,7 +27,7 @@ export default React.createClass ({
           data: null
         });
 
-        this.setState ({ message: 'Account disconnected! See you later!' });
+        this.setState ({ message: 'You have just logged out. Please log in again to see your polls.' });
       }
       else this.setState ({ message: data.error });
 

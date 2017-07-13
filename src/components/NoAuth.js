@@ -6,7 +6,7 @@ export default React.createClass ({
   render () {
     return (
       <Paper style={{ margin: '8px', padding: '8px' }}>
-        <h3 className="text-center">You have to login to see this page.</h3>
+        <h3 className="text-center">You must login to see this page.</h3>
         <p className="text-center">Not a user? <Link to="/signup">Sign up</Link></p>
       </Paper>
     );

@@ -26,10 +26,10 @@ const QuestionStep = React.createClass ({
   render () {
     return (
       <div>
-        <p>Chose a name for the poll</p>
-        <TextField hintText="Ex. What's your age?" id="poll_name" name="poll_name" type="text"
+        <p>Poll Name</p>
+        <TextField hintText="Ex. How old are you?" id="poll_name" name="poll_name" type="text"
           value={this.state.name} onChange={this.changeName} />
-        <p className="text-small muted">Minimum 6 characters</p>
+        <p className="text-small muted">Must have a minimum 6 characters!</p>
       </div>
     );
   },
@@ -99,7 +99,7 @@ const OptionsStep = React.createClass ({
 
     return (
       <div>
-        <p>Insert at least two options</p>
+        <p>Please include at least two options.</p>
 
         {optionsList}
 
@@ -160,7 +160,7 @@ export default React.createClass ({
     if ( this.state.published )
       return <div className="align-center">{this.state.published}</div>;
 
-    let stepContent = <p className="text-error">Invalid Step</p>;
+    let stepContent = <p className="text-error">Invalid.</p>;
     switch (this.state.step) {
       case 0:
         stepContent = <QuestionStep poll={this.state.poll} completed={this.stepCompleted} />;
@@ -172,7 +172,7 @@ export default React.createClass ({
 
     return (
       <div>
-        <h1 className="text-center">Add a new poll</h1>
+        <h1 className="text-center">Add New Poll</h1>
 
         <div className="align-center">
           <Stepper activeStep={this.state.step}>
@@ -192,7 +192,7 @@ export default React.createClass ({
             } /> : ''}
 
           {(this.state.step < 1) ?
-            <RaisedButton style={{ float: 'right' }} primary={true} label="Next Step" onClick={
+            <RaisedButton style={{ float: 'right' }} primary={true} label="Next" onClick={
               () => this.setState ({ step: this.state.step + 1 })
             } disabled={!this.state.completed} /> :
             <RaisedButton style={{ float: 'right' }} primary={true} label="Publish"
@@ -227,9 +227,9 @@ export default React.createClass ({
           loading: false,
           published: (
             <div className="align-center">
-              <h2 className="text-center">Hoo-ray! Poll published!</h2>
+              <h2 className="text-center">Your poll has been published.</h2>
               <Link to={data.url}>
-                <RaisedButton primary={true} label="Show this poll" />
+                <RaisedButton primary={true} label="Show Poll" />
               </Link>
             </div>
           )
@@ -240,7 +240,7 @@ export default React.createClass ({
           loading: false,
           published: (
             <div>
-              <h2 className="text-center">Error while publish the poll</h2>
+              <h2 className="text-center">Error while publishing poll. Please try again.</h2>
               <p className="text-center">{data.error}</p>
             </div>
           )

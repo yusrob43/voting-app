@@ -18,9 +18,9 @@ const SignUpSummary = React.createClass ({
 
     return (
       <Paper style={{ padding: '8px' }}>
-        <h1 className="text-center">Sign Up Completed!</h1>
+        <h1 className="text-center">Sign Up Complete</h1>
         <p className="text-center">
-          Now you can login with this credentials:
+         Login Info:
         </p>
 
         <Table selectable={false}>
@@ -142,7 +142,7 @@ export default React.createClass ({
   changePassword (e) {
     try {
       if ( e.target.value.length < 8 ) {
-        throw 'Minimum length 8 characters';
+        throw 'Password must be at least 8 characters';
         return;
       }
 

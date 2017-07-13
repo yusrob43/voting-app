@@ -13,14 +13,14 @@ export default React.createClass ({
     if ( typeof this.props.state != 'undefined' && this.props.state.user  ) {
       return (
         <Paper style={{ margin: '8px', padding: '8px' }}>
-          <h1 className="text-center">Welcome back <em>{this.props.state.user.name}</em> !</h1>
+          <h1 className="text-center">Welcome Back <em>{this.props.state.user.name}</em> !</h1>
         </Paper>
       );
     }
 
     return (
       <Paper style={{ margin: '8px', padding: '8px' }}>
-        <h1 className="text-center">Login</h1>
+        <h1 className="text-center">Log In</h1>
         <p className="text-center">
           Not register yet?
           <Link to='/signup' className="margin-horizontal">

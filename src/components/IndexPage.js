@@ -82,7 +82,7 @@ const PollsTabContent = React.createClass ({
         { this.state.loading_polls ?
           <CircularProgress size={30} thickness={3} />
           :
-          <FlatButton fullWidth={true} secondary={true} label="Load more polls"
+          <FlatButton fullWidth={true} secondary={true} label="Load More"
             onClick={this.loadMorePolls} />
         }
       </div>
@@ -122,11 +122,11 @@ export default React.createClass ({
     return (
       <div>
         <Paper style={{ padding: '8px', marginBottom: '8px' }}>
-          <h1 className="text-center">Voting App</h1>
-          <h2 className="text-center">Create custom polls with live results.</h2>
+          <h1 className="text-center">Demo - A Simple Voting App</h1>
+          <h2 className="text-center">Create Custom Polls With Live Results</h2>
           { ( typeof this.props.state == 'undefined' || !this.props.state.user ) ? (
             <Link to="/signup">
-              <RaisedButton fullWidth={true} primary={true} label="Sign Up Now" />
+              <RaisedButton fullWidth={true} primary={true} label="Sign Up" />
             </Link> ) : ''
           }
         </Paper>

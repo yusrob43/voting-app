@@ -49,7 +49,7 @@ const MyPollsList = React.createClass ({
     });
 
     if ( this.props.polls.length < 1 )
-      return <h2 className="text-center">No Polls found.</h2>;
+      return <h2 className="text-center">No polls found. Use the Add button to create one.</h2>;
 
     return (
       <List>
@@ -104,7 +104,7 @@ export default React.createClass ({
     if ( this.state.error )
       return (
         <div>
-          <h2 className="text-center">Oh no! An error occurred!</h2>
+          <h2 className="text-center">An error has occurred. Please try again.</h2>
           <p className="text-center text-error">{this.state.error}</p>
         </div>
       );

@@ -84,7 +84,7 @@ export default React.createClass ({
             } />
           </Link>
           <Link to="/login">
-            <FlatResponsiveButton label="Login" icon={
+            <FlatResponsiveButton label="Log In" icon={
               <FontIcon className="material-icons">account_circle</FontIcon>
             } />
           </Link>
@@ -133,10 +133,10 @@ export default React.createClass ({
         <div className="divider"></div>
         
         <p className="text-center muted text-small">
-          Coded and Written by <a href="http://neckersbox.eu">Davide Francesco Merico</a>.
+          Coded by <a href="https://github.com/yusrob43/">Yusuf A. Robles</a>.
         </p>
         <p className="text-center muted text-small">
-          <a href="https://github.com/NeckersBOX/votingapp">
+          <a href="https://github.com/yusrob43/voting-app">
             GitHub Project
           </a>
         </p>
